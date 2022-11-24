@@ -27,13 +27,13 @@ while True:
 
         pyperclip.copy(recogn)
 
-        pyautogui.click(x=1050, y=680, interval=0.5, button="left")
+        pyautogui.click(x=840, y=730, interval=0.5, button="left")
         pyautogui.hotkey("ctrl", "v")
         pyautogui.hotkey("enter")
         time.sleep(5)
 
-        pyautogui.click(x=1055, y=615, interval=0.5, button="right")
-        pyautogui.click(x=1065, y=625, interval=0.5, button="left")
+        pyautogui.click(x=862, y=658, interval=0.5, button="right")
+        pyautogui.click(x=882, y=681, interval=0.5, button="left")
         time.sleep(1)
         clip_str = pyperclip.paste()
         print(clip_str)
