@@ -27,12 +27,15 @@ while True:
 
         pyperclip.copy(recogn)
 
+        # コメント入力欄の位置を指定
         pyautogui.click(x=840, y=730, interval=0.5, button="left")
         pyautogui.hotkey("ctrl", "v")
         pyautogui.hotkey("enter")
         time.sleep(5)
 
+        # 最新の会話の位置を指定
         pyautogui.click(x=862, y=658, interval=0.5, button="right")
+        # 右クリック後に出る「コピー」の位置を指定
         pyautogui.click(x=882, y=681, interval=0.5, button="left")
         time.sleep(1)
         clip_str = pyperclip.paste()
